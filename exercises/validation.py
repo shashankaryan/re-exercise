@@ -9,6 +9,9 @@ string passes a condition.
 
 def has_vowel(string):
     """Return True iff the string contains one or more vowels."""
+    
+    val=bool(re.search(r'[aeiou]', string))
+    return val
 
 
 def is_integer(string):
