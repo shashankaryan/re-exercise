@@ -38,6 +38,8 @@ def is_valid_date(string):
 def is_number(string):
     """Return True iff the string represents a decimal number."""
 
+    val = bool(re.search(r'^-?[\d]+\.?[\d]+$', string))
+    return val
 
 def is_hex_color(string):
     """Return True iff the string represents an RGB hex color code."""
