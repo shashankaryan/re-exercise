@@ -31,6 +31,9 @@ def is_fraction(string):
 def is_valid_date(string):
     """Return True iff the string represents a valid YYYY-MM-DD date."""
 
+    val = bool(re.search(r'^\d{4}\-(0\d|1[0-2])\-(0\d|[12]\d|3[01])$', '1980-02-32'))
+    return val
+
 
 def is_number(string):
     """Return True iff the string represents a decimal number."""
