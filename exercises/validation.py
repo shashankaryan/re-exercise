@@ -18,7 +18,7 @@ def has_vowel(string):
 def is_integer(string):
     """Return True iff the string represents a valid integer."""
 
-    val = bool(re.search(r'^-?\d*$', string))
+    val = bool(re.search(r'^-?\d+$', string))
     return val
 
 def is_fraction(string):
