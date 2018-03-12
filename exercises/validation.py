@@ -43,3 +43,6 @@ def is_number(string):
 
 def is_hex_color(string):
     """Return True iff the string represents an RGB hex color code."""
+
+    val = bool(re.search(r'^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$', string))
+    return val
